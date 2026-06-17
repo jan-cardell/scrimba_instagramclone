@@ -28,3 +28,26 @@ const posts = [
     }
 ]
 
+let post = document.getElementById("post")
+
+for(let i = 0; i < posts.length; i++){
+    let newpost = 
+            `<div class="post-head">
+                <img src="${posts[i].avatar}" class="avatar">
+                <div>
+                    <h1 id="post-name">${posts[i].name}</h1>
+                    <h2 id="post-location">${posts[i].location}</h2>
+                </div>
+            </div>
+            <img src="${posts[i].post}" class="post-picture">
+            <div>
+                <div class="post-reactions">
+                    <img src="images/icon-heart.png" class="reactions">
+                    <img src="images/icon-comment.png" class="reactions">
+                    <img src="images/icon-dm.png" class="reactions">
+                </div>
+                <p class="post-likes">${posts[i].likes} likes</p>
+                <p class="post-comment"><span class="post-comment-name">${posts[i].username}</span> ${posts[i].comment}</p>
+            </div>`
+    post.innerHTML += newpost
+}
