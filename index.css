@@ -1,5 +1,67 @@
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 375px;
+    font-family: "Source Sans 3", sans-serif;
 }
 
+header{
+    display: flex;
+    border-bottom: 2px #C6C6C6 solid;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+h1{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.oldagram-logo{
+    height: 33px;
+}
+
+.avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    margin-right: 7px;
+}
+
+.post-head{
+    display: flex;
+    padding: 10px;
+}
+
+.post-picture{
+    width: 375px;
+    margin-bottom: 21px;
+}
+
+.reactions{
+    height: 23px;
+    margin: 0 2px 12px 10px;
+
+}
+
+.post-likes{
+    margin: 0 0 12px 13px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.post-comment{
+    margin: 0 0 16px 13px;
+    font-size: 15;
+}
+
+.post-comment-name{
+    font-weight: 700;
+}
